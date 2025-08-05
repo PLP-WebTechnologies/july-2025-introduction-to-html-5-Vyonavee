@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apply to be signed by SonicWave Records — a leading indie label. Submit your music, bio, and performance history here." />
+  <meta name="keywords" content="musician application, record label audition, artist submission, get signed, music career, band application" />
+  <meta name="author" content="SonicWave Records Talent Team" />
+  <title>Apply to Be Signed | SonicWave Records</title>
+</head>
+<body>
+
+  <!-- Page Header -->
+  <header role="banner">
+    <h1>Apply to Be Signed by SonicWave Records</h1>
+    <p>We’re looking for original, passionate musicians and bands across all genres. If you’re ready for your breakthrough, we’re ready to listen.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav role="navigation" aria-label="Application Sections">
+    <ul>
+      <li><a href="#application">Application Form</a></li>
+      <li><a href="#portfolio">Music Portfolio</a></li>
+      <li><a href="#guidelines">Submission Guidelines</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main role="main">
+
+    <!-- Application Form -->
+    <section id="application" aria-labelledby="form-heading">
+      <h2 id="form-heading">Musician Application Form</h2>
+      <form action="/submit-application" method="post" enctype="multipart/form-data" novalidate>
+
+        <!-- Full Name or Band Name -->
+        <label for="name">Full Name (or Band Name) *</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="e.g., Jordan Lee or The Midnight Echoes" 
+          required 
+          autocomplete="organization" 
+        />
+
+        <!-- Email -->
+        <label for="email">Email Address *</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="you@musician.com" 
+          required 
+          autocomplete="email" 
+        />
+
+        <!-- Phone -->
+        <label for="phone">Phone Number *</label>
+        <input 
+          type="tel" 
+          id="phone" 
+          name="phone" 
+          placeholder="(555) 123-4567" 
+          required 
+          autocomplete="tel" 
+        />
+
+        <!-- Genre -->
+        <label for="genre">Primary Music Genre *</label>
+        <select id="genre" name="genre" required>
+          <option value="">-- Select Genre --</option>
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
+          <option value="hip-hop">Hip-Hop/Rap</option>
+          <option value="rnb">R&B</option>
+          <option value="country">Country</option>
+          <option value="electronic">Electronic</option>
+          <option value="jazz">Jazz</option>
+          <option value="folk">Folk/Acoustic</option>
+          <option value="other">Other</option>
+        </select>
+
+        <!-- Age -->
+        <label for="age">Age *</label>
+        <input 
+          type="number" 
+          id="age" 
+          name="age" 
+          min="13" 
+          max="100" 
+          placeholder="18" 
+          required 
+        />
+
+        <!-- Location -->
+        <label for="location">City, Country *</label>
+        <input 
+          type="text" 
+          id="location" 
+          name="location" 
+          placeholder="Nashville, USA" 
+          required 
+          autocomplete="address-level1"
+        />
+
+        <!-- Website or Social Link -->
+        <label for="website">Official Website or Social Media Profile *</label>
+        <input 
+          type="url" 
+          id="website" 
+          name="website" 
+          placeholder="https://instagram.com/yourmusic" 
+          required 
+          autocomplete="url"
+        />
+
+        <!-- Years Active -->
+        <label for="years">Years Active as a Musician *</label>
+        <input 
+          type="number" 
+          id="years" 
+          name="years" 
+          min="0" 
+          max="50" 
+          value="1" 
+          required 
+        />
+
+        <!-- Are You Signed? -->
+        <fieldset>
+          <legend>Are you currently signed to another label?</legend>
+          <div>
+            <input type="radio" id="signed-no" name="signed" value="no" required />
+            <label for="signed-no">No</label>
+          </div>
+          <div>
+            <input type="radio" id="signed-yes" name="signed" value="yes" />
+            <label for="signed-yes">Yes</label>
+          </div>
+        </fieldset>
+
+        <!-- Bio -->
+        <label for="bio">Artist Bio (200 words max) *</label>
+        <textarea 
+          id="bio" 
+          name="bio" 
+          rows="6" 
+          placeholder="Tell us about your musical journey, influences, and what makes your sound unique." 
+          maxlength="1000" 
+          required
+        ></textarea>
+
+        <!-- Consent -->
+        <div>
+          <input type="checkbox" id="consent" name="consent" value="agreed" required />
+          <label for="consent">I confirm that I own the rights to the music I am submitting and grant SonicWave Records permission to review and promote my work. *</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Application</button>
+
+      </form>
+    </section>
+
+    <!-- Musician Portfolio -->
+    <section id="portfolio" aria-labelledby="portfolio-heading">
+      <h2 id="portfolio-heading">Artist Spotlight: Charisma</h2>
+      <p><em>A sample applicant — Afro-pop artist from Kenya.</em></p>
+
+      <!-- Artist Photo -->
+      <figure>
+        <img src="/charisma.jpeg" alt="Charisma performing live, singing into a  microphone" />
+        <figcaption>Charisma at the Sol Fest 2024.</figcaption>
+      </figure>
+
+      <!-- Audio Sample -->
+      <h3>Listen: Original Track “Sina Noma”</h3>
+      <audio controls aria-label="Play Charisma' original song 'Sina Noma'">
+        <source src="/Sinanoma.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- Video Sample -->
+      <h3>Watch: Live Studio Session</h3>
+      <video controls width="600" aria-label="Charisma's 'Sina Noma' music video with a crew">
+        <source src="/sinanom.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <!-- Submission Guidelines -->
+    <section id="guidelines" aria-labelledby="guidelines-heading">
+      <h2 id="guidelines-heading">Submission Guidelines</h2>
+
+      <h3>What We’re Looking For</h3>
+      <ul>
+        <li>Original music with strong songwriting and emotional depth</li>
+        <li>Professional-quality audio and video recordings</li>
+        <li>Active engagement with fans through social media or live shows</li>
+        <li>A unique voice or sound that stands out in today’s market</li>
+      </ul>
+
+      <h3>Accepted File Types & Limits</h3>
+      <table border="1" aria-label="File submission requirements for musicians">
+        <thead>
+          <tr>
+            <th>File Type</th>
+            <th>Accepted Formats</th>
+            <th>Max Size</th>
+            <th>Requirements</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Headshot</td>
+            <td>JPG, PNG</td>
+            <td>5 MB</td>
+            <td>Clear, well-lit photo showing the artist or band</td>
+          </tr>
+          <tr>
+            <td>Demo Track</td>
+            <td>MP3, WAV</td>
+            <td>25 MB</td>
+            <td>One original song, under 5 minutes</td>
+          </tr>
+          <tr>
+            <td>Promo Video</td>
+            <td>MP4, MOV</td>
+            <td>100 MB</td>
+            <td>Live performance or music video</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Note:</strong> All applicants will receive a response within <strong>21 business days</strong>. Unsuccessful submissions will not be returned.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>&copy; <time datetime="2025">2025</time> <strong>TheeWave Records</strong>. All rights reserved.</p>
+    <p>Email: <a href="mailto:signme@theewave.com">signme@theewave.com</a> | Follow us: <a href="https://instagram.com/theewaverecs" target="_blank" rel="noopener">Instagram</a></p>
+    <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Submission</a></p>
+  </footer>
+
+</body>
+</html>
